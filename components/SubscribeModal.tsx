@@ -1,16 +1,14 @@
 "use client";
 
-import React, { useState } from "react";
-import { toast } from "react-hot-toast";
-
-import useSubscribeModal from "@/hooks/useSubscribeModal";
-import { useUser } from "@/hooks/useUser";
-import { postData } from "@/libs/helpers";
-import { getStripe } from "@/libs/stripeClient";
 import { Price, ProductWithPrice } from "@/types";
-
 import Modal from "./Modal";
 import Button from "./Button";
+import { useState } from "react";
+import { useUser } from "@/hooks/useUser";
+import toast from "react-hot-toast";
+import { postData } from "@/libs/helpers";
+import { getStripe } from "@/libs/stripeClient";
+import useSubscribeModal from "@/hooks/useSubscribeModal";
 
 interface SubscribeModalProps {
   products: ProductWithPrice[];
@@ -27,9 +25,8 @@ const formatPrice = (price: Price) => {
 };
 
 const SubscribeModal: React.FC<SubscribeModalProps> = ({ products }) => {
-  const subscribeModal = useSubscribeModal();
   const { user, isLoading, subscription } = useUser();
-
+  const subscribeModal = useSubscribeModal();
   const [priceIdLoading, setPriceIdLoading] = useState<string>();
 
   const onChange = (open: boolean) => {
@@ -65,7 +62,7 @@ const SubscribeModal: React.FC<SubscribeModalProps> = ({ products }) => {
     }
   };
 
-  let content = <div className="text-center">No products available.</div>;
+  let content = <div className="text-center">No Products available</div>;
 
   if (products.length) {
     content = (

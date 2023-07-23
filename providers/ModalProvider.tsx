@@ -7,7 +7,7 @@ import { ProductWithPrice } from "@/types";
 import { useEffect, useState } from "react";
 
 interface ModalProviderProps {
-  products: ProductWithPrice;
+  products: ProductWithPrice[];
 }
 
 const ModalProvider: React.FC<ModalProviderProps> = ({ products }) => {
