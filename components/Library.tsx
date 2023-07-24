@@ -27,9 +27,9 @@ const Library: React.FC<LibraryProps> = ({ songs }) => {
     }
     //Check for subscription
 
-    //if (!subscription) {
-    //return subscribeModal.onOpen();
-    //}
+    if (!subscription) {
+      return subscribeModal.onOpen();
+    }
 
     return uploadModal.onOpen();
   };
