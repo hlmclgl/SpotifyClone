@@ -7,21 +7,21 @@ export const revalidate = 0;
 
 export default async function Home() {
   const songs = await getSongs();
-  
-  
 
   return (
-    <div className="
+    <div
+      className="
       bg-neutral-900
       rounded-lg
       h-full
       w-full
       overflow-hidden
       overflow-y-auto
-    "> 
+    "
+    >
       <Header>
         <div className="mb-2">
-          <h1 
+          <h1
             className="
               text-white
               text-3xl
@@ -41,7 +41,7 @@ export default async function Home() {
               mt-4
             "
           >
-            <ListItem 
+            <ListItem
               image="/images/liked.png"
               name="Liked Songs"
               href="liked"
@@ -51,14 +51,12 @@ export default async function Home() {
       </Header>
       <div className="mt-2 mb-7 px-6">
         <div className="flex justify-between items-center">
-          <h1 className="text-white text-2xl font-semibold">
-            Newest Songs
-          </h1>
+          <h1 className="text-white text-2xl font-semibold">Newest Songs</h1>
         </div>
         <div>
           <PageContent songs={songs} />
         </div>
       </div>
     </div>
-  )
+  );
 }

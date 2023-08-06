@@ -17,7 +17,7 @@ const Player = () => {
   }
 
   return (
-    <div 
+    <div
       className="
         fixed 
         bottom-0 
@@ -28,10 +28,9 @@ const Player = () => {
         px-4
       "
     >
-        
       <PlayerContent key={songUrl} song={song} songUrl={songUrl} />
     </div>
   );
-}
+};
 
 export default Player;
