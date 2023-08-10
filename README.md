@@ -6,7 +6,7 @@
 
 <h2>🚀 Demo</h2>
 
-[Youtube Video Tutorial](https://www.youtube.com/watch?v=0Oe6DPT764o&t=29s&ab_channel=AhmetHilmi%C3%87ilo%C4%9Flu)
+[Detailed Youtube Video](https://www.youtube.com/watch?v=0Oe6DPT764o&t=29s&ab_channel=AhmetHilmi%C3%87ilo%C4%9Flu)
 
 <h2>Project Screenshots:</h2>
 
